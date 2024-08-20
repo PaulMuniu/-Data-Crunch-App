@@ -13,15 +13,18 @@ st.write("""
 Welcome to our Recipe Recommender System, where we turn your kitchen into a culinary adventure. Whether you’re a seasoned chef or just looking to whip up something quick and easy, our app is here to help you discover delicious recipes tailored to the ingredients you already have.
 """)
 
+# Define the paths to the images
+image_path1 = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Data Crunch App/Deployment/Images/pic1.jpg'
+image_path2 = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Data Crunch App/Deploymen/Images/pic2.jpg'
+
 # Displaying images correctly
 col1, col2 = st.columns(2)
 
-# Load images from file paths
 col1.header(".")
-col1.image("Image/pic1.jpg", caption="Delicious Recipes Just for You!", use_column_width=True)
+col1.image(image_path1, caption="Delicious Recipes Just for You!", use_column_width=True)
 
 col2.header(".")
-col2.image("Image/pic2.jpg", caption="Delicious Recipes Just for You!", use_column_width=True)
+col2.image(image_path2, caption="Delicious Recipes Just for You!", use_column_width=True)
 
 # Additional content
 st.write("""
