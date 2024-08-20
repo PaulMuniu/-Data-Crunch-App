@@ -3,18 +3,21 @@ import joblib
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 from difflib import get_close_matches
+import os
 
-# Define paths to your files
-tfidf_path = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Recipe-Recommender-System/tfidf_model.pkl'
-svd_model_path = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Recipe-Recommender-System/model.pkl'
-recipe_lsa_path = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Recipe-Recommender-System/recipe_lsa.pkl'
-recipe_data_path = 'C:/Users/ADMIN/Desktop/Notebook Folder/CAPSTONE PROJECT/Recipe-Recommender-System/Deployment/data_deploy.csv'
+# Define paths relative to your script's location
+base_dir = os.path.dirname(__file__)
+
+# Load pre-trained models using relative paths
+tfidf_path = os.path.join(base_dir, 'Deployment/tfidf_model.pkl')
+model_path = os.path.join(base_dir, 'Deployment/model.pkl')
+recipe_lsa_path = os.path.join(base_dir, 'Deployment/recipe_lsa.pkl')
+recipe_data_path = os.path.join(base_dir, 'Deployment/data_deploy.csv')
 
 
-# Load pre-trained models
 tfidf = joblib.load(tfidf_path)
-svd_model = joblib.load(svd_model_path)
-recipe_lsa = joblib.load(recipe_lsa_path) 
+svd_model = joblib.load(model_path)
+recipe_lsa = joblib.load(recipe_lsa_path)
 
 # Load recipe data
 data = pd.read_csv(recipe_data_path)  
