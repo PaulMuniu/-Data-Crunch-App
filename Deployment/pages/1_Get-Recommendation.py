@@ -5,19 +5,20 @@ import pandas as pd
 from difflib import get_close_matches
 import os
 
-# Define paths relative to your script's location
-base_dir = os.path.dirname(__file__)
+# Define the base directory relative to the script's location
+base_dir = os.path.dirname(os.path.dirname(__file__))  # Go up one level from 'pages' directory
 
 # Load pre-trained models using relative paths
-tfidf_path = os.path.join(base_dir, 'Deployment/tfidf_model.pkl')
-model_path = os.path.join(base_dir, 'Deployment/model.pkl')
-recipe_lsa_path = os.path.join(base_dir, 'Deployment/recipe_lsa.pkl')
-recipe_data_path = os.path.join(base_dir, 'Deployment/data_deploy.csv')
+tfidf_path = os.path.join(base_dir, 'tfidf_model.pkl')
+model_path = os.path.join(base_dir, 'model.pkl')
+recipe_lsa_path = os.path.join(base_dir, 'recipe_lsa.pkl')
+recipe_data_path = os.path.join(base_dir, 'data_deploy.csv')
 
-
+# Now you can load the files
 tfidf = joblib.load(tfidf_path)
 svd_model = joblib.load(model_path)
 recipe_lsa = joblib.load(recipe_lsa_path)
+data = pd.read_csv(recipe_data_path)
 
 # Load recipe data
 data = pd.read_csv(recipe_data_path)  
