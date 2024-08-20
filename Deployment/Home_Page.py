@@ -14,24 +14,6 @@ st.write("""
 Welcome to our Recipe Recommender System, where we turn your kitchen into a culinary adventure. Whether you’re a seasoned chef or just looking to whip up something quick and easy, our app is here to help you discover delicious recipes tailored to the ingredients you already have.
 """)
 
-# Define the base directory relative to the script's location
-base_dir = os.path.dirname(os.path.dirname(__file__))  # Go up one level from 'pages' directory
-
-# Define the paths to the images using relative paths
-image_path1 = os.path.join(base_dir, 'Deployment\Image', 'pic1.jpg')
-image_path2 = os.path.join(base_dir, 'Deployment\Image', 'pic2.jpg')
-
-# Displaying images correctly
-col1, col2 = st.columns(2)
-
-col1.header("#Yummy")
-col1.image(image_path1, caption="Delicious Recipes Just for You!", use_column_width=True)
-
-col2.header("#Exquisite")
-col2.image(image_path2, caption="Delicious Recipes Just for You!", use_column_width=True)
-
-
-
 # Additional content
 st.write("""
 **Why Choose Us?**
