@@ -4,7 +4,7 @@ import streamlit as st
 feedback = st.slider('How much would you rate this app?', min_value=0, max_value=5, step=1)
 
 # Check if feedback is provided
-if feedback:
+if feedback > 0:
     st.header("Thank you for rating the app!")
 else:
     st.write("Rate us with 💙")
