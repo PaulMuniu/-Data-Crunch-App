@@ -50,4 +50,4 @@ We believe cooking should be an enjoyable experience, not a chore. That's why we
 
 # Footer
 st.write("---")
-st.write("🔧 Develoved with Passion 💟")
+st.write("🔧 Develoved with love 💟")
