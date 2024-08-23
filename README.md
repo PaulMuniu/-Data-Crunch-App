@@ -1,5 +1,5 @@
 # Data Crunch App 🍽️
-<img src= "Image/" width="300" height="400"/>
+<img src= "Image/pic3.jpg" width="300" height="400"/>
 
 Welcome to the Data Crunch App — your go-to solution for personalized recipe recommendations based on the ingredients you have at home! This app is designed to help users discover delightful recipes with the ingredients they already have, reducing food waste and making cooking more enjoyable.
 
