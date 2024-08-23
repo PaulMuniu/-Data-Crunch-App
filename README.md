@@ -24,8 +24,7 @@ Enter Your Ingredients: Simply input the ingredients you have on hand in the pro
 Get Recommendations: The app will instantly recommend a list of recipes you can make with those ingredients.
 Explore Recipes: Browse through the suggested recipes, check out the ingredients and instructions, and start cooking!
 
-## 🥓Screencast
-For a detailed walkthrough of how to use the Data Crunch App [here](https://data-crunch-app.streamlit.app/)
+## 🥓The APP
+You can use the Data Crunch App [here](https://data-crunch-app.streamlit.app/)
 
-[Watch the Screencast](Image/screencast.webm)
 
