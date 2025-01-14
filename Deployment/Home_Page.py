@@ -26,10 +26,10 @@ image_path2 = os.path.join(base_dir, 'Deployment/Image', 'pic2.jpg')
 col1, col2 = st.columns(2)
 
 col1.header("#Irresistibly Yummy")
-col1.image(image_path1, caption="Tailored to your taste!", use_column_width=True)
+col1.image(image_path1, caption="Tailored to your taste!", use_container_width=True)
 
 col2.header("#Exquisitely Crafted")
-col2.image(image_path2, caption="Personalized recipes!", use_column_width=True)
+col2.image(image_path2, caption="Personalized recipes!", use_container_width=True)
 
 # Additional content
 st.write("""
